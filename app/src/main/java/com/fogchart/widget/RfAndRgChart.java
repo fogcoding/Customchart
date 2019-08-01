@@ -105,7 +105,7 @@ public class RfAndRgChart extends BaseChart {
         float percentWidth = (canvas.getWidth() - this.borderLeft)/6;
         for (int i = 50 ,j=0; i <= 100;) {
             if(i == 100){
-                canvas.drawText(""+i, (float) (this.borderLeft + (percentHeight*j++)*0.9),(float) (canvas.getHeight()/6*4.8),numberPaint);
+                canvas.drawText(""+i, (float) (this.borderLeft  + (percentHeight*j++)*0.95),(float) (canvas.getHeight()/6*4.8),numberPaint);
             }
             canvas.drawText(""+i,this.borderLeft - numberSize/2 + percentHeight*j++,(float) (canvas.getHeight()/6*4.8),numberPaint);
             i = i + 10;

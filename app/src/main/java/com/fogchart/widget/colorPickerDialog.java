@@ -4,7 +4,7 @@ package com.fogchart.widget;
  * Created by Andrew on 2016/12/7.
  */
 /*
- * @(#)ColorPickerDialog.java		       Project:com.sinaapp.msdxblog.androidkit
+ * @(#)colorPickerDialog.java		       Project:com.sinaapp.msdxblog.androidkit
  * Date:2012-9-17
  *
  * Copyright (c) 2011 CFuture09, Institute of Software,
@@ -44,7 +44,7 @@ import android.view.View;
 /**
  * @author Geek_Soledad (66704238@51uc.com)
  */
-public class ColorPickerDialog extends Dialog {
+public class colorPickerDialog extends Dialog {
     private Context mContext;
     /**
      * 标题。
@@ -68,7 +68,7 @@ public class ColorPickerDialog extends Dialog {
      * @param l
      *            颜色选择后的回调接口。
      */
-    public ColorPickerDialog(Context context, String title,
+    public colorPickerDialog(Context context, String title,
                              OnColorChangedListener l) {
         this(context, title, Color.GRAY, l);
 
@@ -85,7 +85,7 @@ public class ColorPickerDialog extends Dialog {
      * @param l
      *            颜色选择后的回调接口。
      */
-    public ColorPickerDialog(Context context, String title, int initalColor,
+    public colorPickerDialog(Context context, String title, int initalColor,
                              OnColorChangedListener l) {
         super(context);
         mContext = context;
@@ -313,7 +313,7 @@ public class ColorPickerDialog extends Dialog {
             if (mHighlightCenter && inCenter) {// 点击在中心圆, 且当前启动在中心圆
                 if (this.mListener != null) {
                     this.mListener.colorChanged(mCenterPaint.getColor());
-                    ColorPickerDialog.this.dismiss();
+                    colorPickerDialog.this.dismiss();
                 }
             }
             if (mDownInCircle) {
@@ -342,7 +342,7 @@ public class ColorPickerDialog extends Dialog {
 
         public PortraitColorPickerView(Context context, OnColorChangedListener l) {
             super(context, l);
-            Display display = ColorPickerDialog.this.getWindow()
+            Display display = colorPickerDialog.this.getWindow()
                     .getWindowManager().getDefaultDisplay();
             int height = (int) (display.getHeight() * 0.5f) - 36;
             int width = (int) (display.getWidth() * 0.7f);
@@ -458,7 +458,7 @@ public class ColorPickerDialog extends Dialog {
         /*
          * (non-Javadoc)
          *
-         * @see com.sinaapp.msdxblog.androidkit.graphics.ColorPickerDialog.
+         * @see com.sinaapp.msdxblog.androidkit.graphics.colorPickerDialog.
          * ColorPickerView#interpRectColor(int[], float, float)
          */
         protected int interpRectColor(int colors[], float x, float y) {
@@ -492,7 +492,7 @@ public class ColorPickerDialog extends Dialog {
         public LandscapeColorPickerView(Context context,
                                         OnColorChangedListener l) {
             super(context, l);
-            Display display = ColorPickerDialog.this.getWindow()
+            Display display = colorPickerDialog.this.getWindow()
                     .getWindowManager().getDefaultDisplay();
             int height = (int) (display.getHeight() * 0.8f) - 36;
             int width = (int) (display.getWidth() * 0.5f);
@@ -606,7 +606,7 @@ public class ColorPickerDialog extends Dialog {
         /*
          * (non-Javadoc)
          *
-         * @see com.sinaapp.msdxblog.androidkit.graphics.ColorPickerDialog.
+         * @see com.sinaapp.msdxblog.androidkit.graphics.colorPickerDialog.
          * ColorPickerView#interpRectColor(int[], float, float)
          */
         protected int interpRectColor(int colors[], float x, float y) {

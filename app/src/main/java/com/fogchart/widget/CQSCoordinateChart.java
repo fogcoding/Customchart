@@ -26,7 +26,7 @@ public class CQSCoordinateChart extends BaseChart {
     private float perHeihtLenth;
     private float perWidthLength;
     private float textSize = dpToPx(getResources().getDimension(R.dimen.maelookdimension4));      //30px
-    private ArrayList<point> data = new ArrayList<>();
+    private ArrayList<point> data;
     private float perLength_x;
     private float perLength_y;
 

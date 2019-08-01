@@ -16,7 +16,7 @@ import com.fogchart.R;
 //TODO 处理数据缩放问题
 public class colorRenderingBarChart extends BaseChart {
 
-    private int[] colorArray = {R.color.r16,R.color.r1,R.color.r2,R.color.r3,R.color.r4,R.color.r5,R.color.r6,R.color.r7,R.color.r8,R.color.r9,R.color.r10,R.color.r11,R.color.r12,R.color.r13,R.color.r14,R.color.r15};
+    private int[] colorArray = {R.color.r16,R.color.r1,R.color.r2,R.color.r3,R.color.r4,R.color.r5,R.color.r6,R.color.r7,R.color.r8,R.color.r9,R.color.r10,R.color.r11,R.color.r12,R.color.r13,R.color.r14,R.color.r15,R.color.r16};
     private float padding;
     private float margin;
     private float textSize = dpToPx(getResources().getDimension(R.dimen.maelookdimension3_5));      //35px
@@ -39,7 +39,7 @@ public class colorRenderingBarChart extends BaseChart {
         if (this.data == null){
             return;
         }
-        for(int i=0;i<=15;i++){
+        for(int i=0;i<=16;i++){
             Paint colorPanit = new Paint();
             colorPanit.setStyle(Paint.Style.FILL);
             colorPanit.setColor(getResources().getColor(colorArray[i]));
